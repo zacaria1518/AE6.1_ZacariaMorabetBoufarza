@@ -1,0 +1,98 @@
+
+/*Zacaria Morabet Boufarza 1ºASIRB*/main {
+    margin-top: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    border-top: solid 2px black;
+    padding: 10px;
+}
+hr{
+    border: var(--debug);
+}
+div.portada {
+    display: flex;
+
+    background-image: url(../img/Carroussel/Carroussel-1.webp);
+    background-size: 100% 180%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    align-items: center;
+}
+
+.portada>h2 {
+    width: 1%;
+    font-size: 40px;
+    color: var(--secondary-color);
+    padding-left: 15px;
+}
+
+.galeria {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition:scale cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.contenido {
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+    width: 50%;
+}
+
+.boton {
+
+    margin-top: 25px;
+}
+p{
+    padding: 10px;
+    text-align: justify;
+}
+.btn {
+
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.galeria img:hover {
+    scale: 90%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 2100px) {
+    .galeria img {
+        max-width: 280px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .btn {
+        font-size: 15px;
+    }
+}
+/*Zacaria Morabet Boufarza 1ºASIRB*/
